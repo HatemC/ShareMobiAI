@@ -1,11 +1,12 @@
 import { ScrollView } from 'react-native';
 import { Link } from 'expo-router';
 import ClickableComponent from '../../assets/components/ClickableComponent';
+import ProfileHeader from '../../assets/components/ProfileHeader';
 
 export default function HomeScreen() {
   return (
     <ScrollView>
-
+        <ProfileHeader />
         <Link href={`/details/home/calendrier`} asChild>
           <ClickableComponent
             title={`Mon Calendrier`}

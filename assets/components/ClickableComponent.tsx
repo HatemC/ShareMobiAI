@@ -14,7 +14,7 @@ export default function ClickableComponent({ title, iconName, onPress, style }: 
     <TouchableOpacity onPress={onPress} style={[styles.container, style]}>
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
-        <Ionicons name={iconName} size={24} color='black' />
+        <Ionicons name={iconName} size={26} color='black' />
       </View>
     </TouchableOpacity>
   );
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 16,
+    padding: 25,
     backgroundColor: '#FFFFFF',
     borderRadius: 12,
     shadowColor: '#000',
