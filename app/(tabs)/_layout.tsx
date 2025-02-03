@@ -8,6 +8,7 @@ export default function TabsLayout() {
         name="index"
         options={{
           title: 'Home',
+          headerTitleAlign: 'center',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" size={size} color={color} />
           ),
@@ -17,6 +18,7 @@ export default function TabsLayout() {
         name="settings"
         options={{
           title: 'Settings',
+          headerTitleAlign: 'center',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="settings" size={size} color={color} />
           ),

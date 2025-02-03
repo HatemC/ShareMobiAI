@@ -5,15 +5,32 @@ import ClickableComponent from '../../assets/components/ClickableComponent';
 export default function SettingsScreen() {
   return (
     <ScrollView>
-      {[...Array(10).keys()].map((i) => (
-        <Link key={i} href={`/details/${i + 1}`} asChild>
-          <ClickableComponent
-            title={`Élément ${i + 1}`}
-            iconName="settings" // Icône différente pour l'écran Settings
-            onPress={() => { }}
-          />
-        </Link>
-      ))}
+      <Link href={`/details/settings/infoPerso`} asChild>
+               <ClickableComponent
+                 title={`Modifier mes informations personnelles`}
+                 iconName="pencil"
+                 onPress={() => { }}
+                 style={{ backgroundColor: '#FFDDDD' }} // Personnalisation
+               />
+             </Link>
+
+             <Link href={`/details/settings/photo`} asChild>
+               <ClickableComponent
+                 title={`Modifier ma photo de profil`}
+                 iconName="pencil"
+                 onPress={() => { }}
+                 style={{ backgroundColor: '#FFDDDD' }} // Personnalisation
+               />
+             </Link>
+
+             <Link href={`/details/settings/mdp`} asChild>
+               <ClickableComponent
+                 title={`Modifier mon mot de passe`}
+                 iconName="pencil"
+                 onPress={() => { }}
+                 style={{ backgroundColor: '#FFDDDD' }} // Personnalisation
+               />
+             </Link>
     </ScrollView>
   );
 }
